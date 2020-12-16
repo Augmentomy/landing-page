@@ -1,0 +1,89 @@
+<html>
+<head>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: montserrat-light, sans-serif;
+            background: #ccf2f4;
+        }
+
+        #content {
+            animation: 2.5s fadeIn;
+            text-align: center;
+            width: 50rem;
+        }
+        .contacts .mail {
+            color: unset;
+            text-decoration: none;
+        }
+
+        #content .logo {
+            width: 50%;
+        }
+
+        #content .slogan {
+            font-size: 2rem;
+            font-weight: 100;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @font-face {
+            font-family: montserrat-light;
+            src: url(fonts/Montserrat-Light.ttf);
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+    <p><img src="images/logo.webp" class="logo" alt="Logo"/></p>
+    <p class="slogan">Medizin mit Mixed Reality: enFaced bringt den Fokus auf das Wichtigste - der Patient</p>
+    <p class="contacts">
+        <a href="#"
+           class="mail"
+           data-contact="bWFpbHRvOm1heEBlbmZhY2VkLnRlY2g=">
+            Max Weber</a> |
+        <a href="#"
+           class="mail"
+           data-contact="bWFpbHRvOmRhbmllbEBlbmZhY2VkLnRlY2g=">
+            Daniel Wild</a> |
+        <a href="#"
+           class="mail"
+           data-contact="bWFpbHRvOm5hdGFsaWVAZW5mYWNlZC50ZWNo">
+            Natalie Schellnegger</a> |
+        <a href="#"
+           class="mail"
+           data-contact="bWFpbHRvOnBhdWxAZW5mYWNlZC50ZWNo">
+            Paul Ganster</a>
+    </p>
+    <p>
+        <a href="#"
+           class="mail"
+           data-contact="bWFpbHRvOiB0ZWFtQGVuZmFjZWQudGVjaA=="
+        >&#x74;&#x65;&#x61;&#x6d;&#064;&#x65;&#x6e;&#x66;&#x61;&#x63;&#x65;&#x64;&#046;&#x74;&#x65;&#x63;&#x68;</a>
+    </p>
+</div>
+<script>
+    document.querySelectorAll(".mail").forEach(element => {
+        element.addEventListener("focus", function () {
+            this[atob('aHJlZg==')] = atob(this.dataset.contact);
+        });
+    })
+</script>
+</body>
+</html>
