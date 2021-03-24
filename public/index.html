@@ -11,11 +11,14 @@
         }
 
         body {
+            font-family: montserrat-light, sans-serif;
+            background: #e7feff;
+        }
+
+        .flex-center {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: montserrat-light, sans-serif;
-            background: #e7feff;
         }
 
         #content {
@@ -36,6 +39,22 @@
         #content .slogan {
             font-size: 1.5rem;
             font-weight: 100;
+        }
+
+        #content .support {
+            font-size: 0.7rem;
+        }
+
+        #content .support a {
+            display: inline-block;
+        }
+
+        #content .support img {
+            height: 1.5rem;
+        }
+
+        #content .slogan strong {
+            font-weight: bold;
         }
 
         .socials img {
@@ -61,10 +80,10 @@
         }
     </style>
 </head>
-<body>
+<body class="flex-center">
 <div id="content">
     <p><img src="images/logo.webp" class="logo" alt="Logo"/></p>
-    <p class="slogan">Medizin mit Mixed Reality: enFaced bringt den Fokus auf das Wichtigste - der Patient</p>
+    <p class="slogan">enFaced is an <strong>Augmented Reality App</strong> that helps surgeons to operate with higher precision, supporting computer-aided <strong>Neuro- and Facial Surgery.</strong></p>
     <p class="contacts">
         <a href="#"
            class="mail"
@@ -93,6 +112,12 @@
         <a href="https://www.facebook.com/enFaced"><img src="images/facebook.png" alt="FB" /></a>
         &nbsp;&nbsp;
         <a href="https://www.youtube.com/channel/UCwyju9JMe448QDSQtcrb7lw"><img src="images/youtube.png" alt="YT" /></a>
+        &nbsp;&nbsp;
+        <a href="https://www.instagram.com/enfaced.tech/"><img src="images/instagram.png" alt="IG" /></a>
+    </p>
+    <p class="support flex-center">
+        This project is supported by aws First Inkubator&nbsp;&nbsp;
+        <a href="https://www.aws.at/"><img src="images/aws.webp" alt="aws" /></a>
     </p>
 </div>
 <script>
