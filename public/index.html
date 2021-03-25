@@ -1,18 +1,22 @@
-<html>
+<!DOCTYPE html>
+<html lang="de">
 <head>
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Augmentomy,enFaced,Medizin,Augmented Reality,Künstliche Intelligenz,Patientin,Ärztin,Patient,Arzt,Mixed Reality">
+    <meta name="description" content="Wir entwickeln Anwendungen mit dem Ziel, das Potential von Augmented Reality und Künstlicher Intelligenz zu entfalten und diese Technologien in jenen Bereichen der Medizin einzusetzen, in denen ÄrztInnen, vor allem aber auch PatientInnen maximal davon profitieren.">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <title>enFaced - der Patient im Fokus</title>
+    <title>Augmentomy - der Patient im Fokus</title>
     <style>
         html, body {
             margin: 0;
             height: 100%;
-            width: 100%;
         }
 
         body {
             font-family: montserrat-light, sans-serif;
             background: #e7feff;
+            padding: 0 1rem;
         }
 
         .flex-center {
@@ -24,20 +28,43 @@
         #content {
             animation: 2.5s fadeIn;
             text-align: center;
-            width: 45rem;
-            padding: 1rem;
         }
+
         .contacts .mail {
             color: unset;
             text-decoration: none;
         }
 
+        @media screen and (min-width: 47rem) {
+            #content {
+                width: 47rem;
+            }
+            #content .logo {
+                font-size: 6rem;
+            }
+            #content .slogan {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media not screen and (min-width: 47rem) {
+            #content {
+                width: 100%;
+            }
+            #content .logo {
+                font-size: 2rem;
+            }
+            #content .slogan {
+                font-size: 1rem;
+            }
+        }
+
         #content .logo {
-            width: 50%;
+            color: #268b90;
+            margin: 1rem;
         }
 
         #content .slogan {
-            font-size: 1.5rem;
             font-weight: 100;
         }
 
@@ -82,42 +109,53 @@
 </head>
 <body class="flex-center">
 <div id="content">
-    <p><img src="images/logo.webp" class="logo" alt="Logo"/></p>
-    <p class="slogan">enFaced is an <strong>Augmented Reality App</strong> that helps surgeons to operate with higher precision, supporting computer-aided <strong>Neuro- and Facial Surgery.</strong></p>
+    <h1 class="logo">
+        Augmentomy
+    </h1>
+    <p class="slogan">
+        <strong>Augmented Reality</strong> in Kombination mit <strong>Künstlicher Intelligenz</strong> birgt riesiges
+        Potential in vielen<br>
+        Bereichen der Medizin.
+    </p>
+    <p class="slogan">
+        Wir entwickeln Anwendungen mit dem Ziel, dieses Potential zu entfalten und diese Technologien in jenen
+        Bereichen einzusetzen, in denen ÄrztInnen, vor allem aber auch PatientInnen maximal davon
+        <strong>profitieren</strong>.
+    </p>
     <p class="contacts">
         <a href="#"
            class="mail"
-           data-contact="bWFpbHRvOm1heEBlbmZhY2VkLnRlY2g=">
+           data-contact="bWFpbHRvOm1heEBhdWdtZW50b215LnRlY2g=">
             Maximilian&nbsp;Weber</a> |
         <a href="#"
            class="mail"
-           data-contact="bWFpbHRvOmRhbmllbEBlbmZhY2VkLnRlY2g=">
+           data-contact="bWFpbHRvOmRhbmllbEBhdWdtZW50b215LnRlY2g=">
             Daniel&nbsp;Wild</a> |
         <a href="#"
            class="mail"
-           data-contact="bWFpbHRvOm5hdGFsaWVAZW5mYWNlZC50ZWNo">
+           data-contact="bWFpbHRvOm5hdGFsaWVAYXVnbWVudG9teS50ZWNo">
             Natalie&nbsp;Schellnegger</a> |
         <a href="#"
            class="mail"
-           data-contact="bWFpbHRvOnBhdWxAZW5mYWNlZC50ZWNo">
+           data-contact="bWFpbHRvOnBhdWxAYXVnbWVudG9teS50ZWNo">
             Paul&nbsp;Ganster</a>
     </p>
     <p>
         <a href="#"
            class="mail"
-           data-contact="bWFpbHRvOiB0ZWFtQGVuZmFjZWQudGVjaA=="
-        >&#x74;&#x65;&#x61;&#x6d;&#064;&#x65;&#x6e;&#x66;&#x61;&#x63;&#x65;&#x64;&#046;&#x74;&#x65;&#x63;&#x68;</a>
+           data-contact="bWFpbHRvOnRlYW1AYXVnbWVudG9teS50ZWNo"
+        >&#x74;&#x65;&#x61;&#x6d;&commat;&#x61;&#x75;&#x67;&#x6d;&#x65;&#x6e;&#x74;&#x6f;&#x6d;&#x79;&period;&#x74;&#x65;&#x63;&#x68;</a>
     </p>
     <p class="socials">
-        <a href="https://www.facebook.com/enFaced"><img src="images/facebook.png" alt="FB" /></a>
+        <a href="https://www.facebook.com/enFaced"><img src="images/facebook.png" alt="FB"/></a>
         &nbsp;&nbsp;
-        <a href="https://www.youtube.com/channel/UCwyju9JMe448QDSQtcrb7lw"><img src="images/youtube.png" alt="YT" /></a>
+        <a href="https://www.youtube.com/channel/UCwyju9JMe448QDSQtcrb7lw"><img src="images/youtube.png" alt="YT"/></a>
         &nbsp;&nbsp;
-        <a href="https://www.instagram.com/enfaced.tech/"><img src="images/instagram.png" alt="IG" /></a>
+        <a href="https://www.instagram.com/enfaced.tech/"><img src="images/instagram.png" alt="IG"/></a>
     </p>
     <p class="support flex-center">
-        This project is supported by aws First Inkubator&nbsp;&nbsp;
-        <a href="https://www.aws.at/"><img src="images/aws.webp" alt="aws" /></a>
+        Dieses Projekt ist unterstützt durch den aws First Inkubator&nbsp;&nbsp;
+        <a href="https://www.aws.at/"><img src="images/aws.webp" alt="aws"/></a>
     </p>
 </div>
 <script>
