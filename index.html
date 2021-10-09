@@ -1,166 +1,209 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Augmentomy,enFaced,Medizin,Augmented Reality,Künstliche Intelligenz,Patientin,Ärztin,Patient,Arzt,Mixed Reality">
-    <meta name="description" content="Wir entwickeln Anwendungen mit dem Ziel, das Potential von Augmented Reality und Künstlicher Intelligenz zu entfalten und diese Technologien in jenen Bereichen der Medizin einzusetzen, in denen ÄrztInnen, vor allem aber auch PatientInnen maximal davon profitieren.">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <title>Augmentomy - der Patient im Fokus</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="Augmentomy,enFaced,Medizin,Augmented Reality,Künstliche Intelligenz,Patientin,Ärztin,Patient,Arzt,Mixed Reality"
+    />
+    <meta
+      name="description"
+      content="Wir entwickeln Anwendungen mit dem Ziel, das Potential von Augmented Reality und Künstlicher Intelligenz zu entfalten und diese Technologien in jenen Bereichen der Medizin einzusetzen, in denen ÄrztInnen, vor allem aber auch PatientInnen maximal davon profitieren."
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Augmentomy - Creating new perspectives in medicine</title>
     <style>
-        html, body {
-            margin: 0;
-            height: 100%;
-            color: #ffffff;
-        }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        color: #ffffff;
+      }
 
-        body {
-            font-family: montserrat-light, sans-serif;
-            background: #404040;
-            padding: 0 1rem;
-        }
+      body {
+        font-family: montserrat-light, sans-serif;
+        background: #404040;
+        padding: 0 1rem;
+      }
 
-        .flex-center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
+      #content {
+        animation: 2.5s fadeIn;
+        text-align: center;
+      }
+
+      .mail {
+        color: unset;
+      }
+
+      .contacts .mail {
+        text-decoration: none;
+      }
+
+      @media screen and (min-width: 47rem) {
         #content {
-            animation: 2.5s fadeIn;
-            text-align: center;
+          width: 47rem;
         }
-
-        .mail {
-            color: unset;
+        #content .logo {
+          height: 5rem;
         }
-
-        .contacts .mail {
-            text-decoration: none;
-        }
-
-        @media screen and (min-width: 47rem) {
-            #content {
-                width: 47rem;
-            }
-            #content .logo {
-                height: 5rem;
-            }
-            #content .slogan {
-                font-size: 1.5rem;
-            }
-        }
-
-        @media not screen and (min-width: 47rem) {
-            #content {
-                width: 100%;
-            }
-            #content .logo {
-                width: 100%;
-            }
-            #content .slogan {
-                font-size: 1rem;
-            }
-        }
-
         #content .slogan {
-            font-weight: 100;
+          font-size: 1.5rem;
         }
+      }
 
-        #content .support {
-            font-size: 0.7rem;
+      @media not screen and (min-width: 47rem) {
+        #content {
+          width: 100%;
         }
+        #content .logo {
+          width: 100%;
+        }
+        #content .slogan {
+          font-size: 1rem;
+        }
+      }
 
-        #content .support a {
-            display: inline-block;
-        }
+      #content .slogan {
+        font-weight: 100;
+      }
 
-        #content .support img {
-            height: 1.5rem;
-        }
+      #content .support {
+        font-size: 0.7rem;
+      }
 
-        #content .slogan strong {
-            font-weight: bold;
-        }
+      #content .support a {
+        display: inline-block;
+      }
 
-        .socials img {
-            height: 1.3rem;
-        }
+      #content .support img {
+        height: 1.5rem;
+      }
 
-        .socials a {
-            text-underline: none;
-        }
+      #content .slogan strong {
+        font-weight: bold;
+      }
 
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
+      .socials img {
+        height: 1.3rem;
+      }
 
-        @font-face {
-            font-family: montserrat-light;
-            src: url(fonts/Montserrat-Light.ttf);
+      .socials a {
+        text-decoration: none;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
         }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @font-face {
+        font-family: montserrat-light;
+        src: url(fonts/Montserrat-Light.ttf);
+      }
     </style>
-</head>
-<body class="flex-center">
-<div id="content">
-    <img src="images/logo.webp" alt="Augmentomy Logo" class="logo">
-    <p class="slogan">
-        <strong>Augmented Reality</strong> in Kombination mit <strong>Künstlicher Intelligenz</strong> birgt riesiges
-        Potential in vielen<br>
-        Bereichen der Medizin.
-    </p>
-    <p class="slogan">
-        Wir entwickeln Anwendungen mit dem Ziel, dieses Potential zu entfalten und diese Technologien in jenen
-        Bereichen einzusetzen, in denen ÄrztInnen, vor allem aber auch PatientInnen maximal davon
+  </head>
+  <body class="flex-center">
+    <div id="content">
+      <img src="images/logo.webp" alt="Augmentomy Logo" class="logo" />
+      <p class="slogan">
+        <strong>Augmented Reality</strong> in Kombination mit
+        <strong>Künstlicher Intelligenz</strong> birgt riesiges Potential in
+        vielen Bereichen der Medizin.
+      </p>
+      <p class="slogan">
+        Wir entwickeln Anwendungen mit dem Ziel, dieses Potential zu entfalten
+        und diese Technologien in jenen Bereichen einzusetzen, in denen
+        ÄrztInnen, vor allem aber auch PatientInnen maximal davon
         <strong>profitieren</strong>.
-    </p>
-    <p class="contacts">
-        <a href="#"
-           class="mail"
-           data-contact="bWFpbHRvOm1heEBhdWdtZW50b215LnRlY2g=">
-            Maximilian&nbsp;Weber</a> |
-        <a href="#"
-           class="mail"
-           data-contact="bWFpbHRvOmRhbmllbEBhdWdtZW50b215LnRlY2g=">
-            Daniel&nbsp;Wild</a> |
-        <a href="#"
-           class="mail"
-           data-contact="bWFpbHRvOm5hdGFsaWVAYXVnbWVudG9teS50ZWNo">
-            Natalie&nbsp;Schellnegger</a> |
-        <a href="#"
-           class="mail"
-           data-contact="bWFpbHRvOnBhdWxAYXVnbWVudG9teS50ZWNo">
-            Paul&nbsp;Ganster</a>
-    </p>
-    <p>
-        <a href="#"
-           class="mail"
-           data-contact="bWFpbHRvOnRlYW1AYXVnbWVudG9teS50ZWNo"
-        >&#x74;&#x65;&#x61;&#x6d;&commat;&#x61;&#x75;&#x67;&#x6d;&#x65;&#x6e;&#x74;&#x6f;&#x6d;&#x79;&period;&#x74;&#x65;&#x63;&#x68;</a>
-    </p>
-    <p class="socials">
-        <a href="https://www.facebook.com/enFaced"><img src="images/facebook.png" alt="FB"/></a>
+      </p>
+      <p class="contacts">
+        <a
+          href="#"
+          class="mail"
+          data-contact="bWFpbHRvOm1heEBhdWdtZW50b215LnRlY2g="
+        >
+          Maximilian&nbsp;Weber</a
+        >
+        |
+        <a
+          href="#"
+          class="mail"
+          data-contact="bWFpbHRvOmRhbmllbEBhdWdtZW50b215LnRlY2g="
+        >
+          Daniel&nbsp;Wild</a
+        >
+        |
+        <a
+          href="#"
+          class="mail"
+          data-contact="bWFpbHRvOm5hdGFsaWVAYXVnbWVudG9teS50ZWNo"
+        >
+          Natalie&nbsp;Schellnegger</a
+        >
+        |
+        <a
+          href="#"
+          class="mail"
+          data-contact="bWFpbHRvOm1hcmt1c0BhdWdtZW50b215LnRlY2g="
+        >
+          Markus&nbsp;Perz</a
+        >
+      </p>
+      <p>
+        <a
+          href="#"
+          class="mail"
+          data-contact="bWFpbHRvOnRlYW1AYXVnbWVudG9teS50ZWNo"
+          >&#x74;&#x65;&#x61;&#x6d;&commat;&#x61;&#x75;&#x67;&#x6d;&#x65;&#x6e;&#x74;&#x6f;&#x6d;&#x79;&period;&#x74;&#x65;&#x63;&#x68;</a
+        >
+      </p>
+      <p class="contacts">
+        Scientific Advisory Board <br>
+        <a href="#" class="mail"> Priv.-Doz.&nbsp;Dr.&nbsp;Dr.&nbsp;Jan&nbsp;Egger</a>
+        |
+        <a href="#" class="mail"> Dipl.-Ing.&nbsp;Christina&nbsp;Schwarz-Gsaxner</a>
+      </p>
+      <p class="socials">
+        <a href="https://www.linkedin.com/company/augmentomy"
+          ><img src="images/linkedin.png" alt="LI"
+        /></a>
         &nbsp;&nbsp;
-        <a href="https://www.youtube.com/channel/UCwyju9JMe448QDSQtcrb7lw"><img src="images/youtube.png" alt="YT"/></a>
+        <a href="https://www.instagram.com/augmentomy"
+          ><img src="images/instagram.png" alt="IG"
+        /></a>
         &nbsp;&nbsp;
-        <a href="https://www.instagram.com/enfaced.tech/"><img src="images/instagram.png" alt="IG"/></a>
-    </p>
-    <p class="support flex-center">
+        <a href="https://www.facebook.com/augmentomy"
+          ><img src="images/facebook.png" alt="FB"
+        /></a>
+        &nbsp;&nbsp;
+        <a href="https://www.youtube.com/channel/UCwyju9JMe448QDSQtcrb7lw"
+          ><img src="images/youtube.png" alt="YT"
+        /></a>
+      </p>
+      <p class="support flex-center">
         Dieses Projekt ist unterstützt durch den aws First Inkubator&nbsp;&nbsp;
-        <a href="https://www.aws.at/"><img src="images/aws.webp" alt="aws"/></a>
-    </p>
-</div>
-<script>
-    document.querySelectorAll(".mail").forEach(element => {
+        <a href="https://www.aws.at/"
+          ><img src="images/aws.webp" alt="aws"
+        /></a>
+      </p>
+    </div>
+    <script>
+      document.querySelectorAll(".mail").forEach((element) => {
         element.addEventListener("focus", function () {
-            this[atob('aHJlZg==')] = atob(this.dataset.contact);
+          this[atob("aHJlZg==")] = atob(this.dataset.contact);
         });
-    })
-</script>
-</body>
+      });
+    </script>
+  </body>
 </html>
